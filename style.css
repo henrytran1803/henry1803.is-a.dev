@@ -78,9 +78,13 @@ body::after {
 }
 
 .nav-logo {
-    font-size: 28px;
-    font-weight: 900;
-    letter-spacing: -1px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo-img {
+    height: 40px;
+    width: auto;
 }
 
 .nav-links {
