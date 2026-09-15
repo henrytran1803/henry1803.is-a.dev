@@ -1,58 +1,188 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henry</title>
+    <title>HENRY — Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <a href="#" class="logo">H</a>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo">H</a>
             <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
+                <a href="#about" class="nav-link" data-text="ABOUT">ABOUT</a>
+                <a href="#work" class="nav-link" data-text="WORK">WORK</a>
+                <a href="#method" class="nav-link" data-text="METHOD">METHOD</a>
+                <a href="#contact" class="nav-link" data-text="CONTACT">CONTACT</a>
             </div>
         </div>
     </nav>
 
-    <main>
-        <section class="hero">
-            <h1>Henry</h1>
-            <p class="subtitle">Developer & Designer</p>
-        </section>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-grid-pattern"></div>
+        <div class="hero-content">
+            <div class="hero-label">01. PRESENTATION</div>
+            <h1 class="hero-title">HENRY</h1>
+            <div class="hero-meta">
+                <span class="hero-role">DEVELOPER</span>
+                <span class="hero-sep">/</span>
+                <span class="hero-location">HO CHI MINH CITY</span>
+            </div>
+        </div>
+        <div class="hero-composition">
+            <div class="geo-circle"></div>
+            <div class="geo-rect"></div>
+            <div class="geo-line geo-line-1"></div>
+            <div class="geo-line geo-line-2"></div>
+        </div>
+    </section>
 
-        <section id="about" class="section">
-            <h2>About</h2>
-            <p>Building elegant solutions with clean code. Minimalist by nature, developer by craft.</p>
-        </section>
-
-        <section id="work" class="section">
-            <h2>Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <div class="work-placeholder"></div>
-                    <h3>Project One</h3>
-                    <p>A clean, functional web application.</p>
+    <!-- About -->
+    <section id="about" class="section section-about">
+        <div class="section-label">02. ABOUT</div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h2 class="section-heading">BUILDING<br>THINGS THAT<br>MATTER.</h2>
+                <p class="section-body">I design and develop digital products with clarity and precision. Every pixel serves a purpose. Every line of code has intent. Minimalism is not decoration — it is discipline.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <div class="stat-number">07+</div>
+                    <div class="stat-label">YEARS EXPERIENCE</div>
                 </div>
-                <div class="work-item">
-                    <div class="work-placeholder"></div>
-                    <h3>Project Two</h3>
-                    <p>Mobile experience, simplified.</p>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">PROJECTS SHIPPED</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">CURIOSITY</div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p><a href="mailto:hello@example.com">hello@example.com</a></p>
-        </section>
-    </main>
+    <!-- Work -->
+    <section id="work" class="section section-work">
+        <div class="section-label">03. WORK</div>
+        <div class="work-list">
+            <a href="#" class="work-item">
+                <div class="work-item-inner">
+                    <span class="work-number">01</span>
+                    <h3 class="work-title">WEB APPLICATION</h3>
+                    <p class="work-desc">Full-stack development. Clean architecture. Functional design.</p>
+                </div>
+                <div class="work-arrow">→</div>
+            </a>
+            <a href="#" class="work-item">
+                <div class="work-item-inner">
+                    <span class="work-number">02</span>
+                    <h3 class="work-title">MOBILE EXPERIENCE</h3>
+                    <p class="work-desc">Cross-platform solutions. Performance-first. User-centered.</p>
+                </div>
+                <div class="work-arrow">→</div>
+            </a>
+            <a href="#" class="work-item">
+                <div class="work-item-inner">
+                    <span class="work-number">03</span>
+                    <h3 class="work-title">DESIGN SYSTEMS</h3>
+                    <p class="work-desc">Component libraries. Design tokens. Scalable foundations.</p>
+                </div>
+                <div class="work-arrow">→</div>
+            </a>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; 2026 Henry. All rights reserved.</p>
+    <!-- Method -->
+    <section id="method" class="section section-method">
+        <div class="section-label">04. METHOD</div>
+        <div class="method-grid">
+            <div class="method-card">
+                <div class="method-card-header">
+                    <span class="method-number">01</span>
+                    <div class="method-icon">—</div>
+                </div>
+                <h3 class="method-title">RESEARCH</h3>
+                <p class="method-body">Understand before building. Every decision backed by evidence, not assumption.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-card-header">
+                    <span class="method-number">02</span>
+                    <div class="method-icon">—</div>
+                </div>
+                <h3 class="method-title">DESIGN</h3>
+                <p class="method-body">Structure first. Grid-driven. Typographic hierarchy. No decoration without function.</p>
+            </div>
+            <div class="method-card">
+                <div class="method-card-header">
+                    <span class="method-number">03</span>
+                    <div class="method-icon">—</div>
+                </div>
+                <h3 class="method-title">DEVELOP</h3>
+                <p class="method-body">Clean code. Performance optimization. Accessibility as default, not afterthought.</p>
+            </div>
+            <div class="method-card method-card-accent">
+                <div class="method-card-header">
+                    <span class="method-number">04</span>
+                    <div class="method-icon">—</div>
+                </div>
+                <h3 class="method-title">SHIP</h3>
+                <p class="method-body">Launch with intent. Iterate with data. Perfection is a process, not an endpoint.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principles -->
+    <section class="section section-principles">
+        <div class="section-label">05. PRINCIPLES</div>
+        <div class="principles-grid">
+            <div class="principle-item">
+                <div class="principle-dots"></div>
+                <h3 class="principle-title">CLARITY</h3>
+                <p class="principle-body">If it's not clear, it's not done. Complexity is the enemy of execution.</p>
+            </div>
+            <div class="principle-item">
+                <div class="principle-dots"></div>
+                <h3 class="principle-title">PRECISION</h3>
+                <p class="principle-body">Details are not details. They make the design. Every margin, every weight, every color.</p>
+            </div>
+            <div class="principle-item">
+                <div class="principle-dots"></div>
+                <h3 class="principle-title">REstraint</h3>
+                <p class="principle-body">What you leave out matters more than what you put in. Edit ruthlessly.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+        <div class="section-label">06. CONTACT</div>
+        <div class="contact-grid">
+            <div class="contact-text">
+                <h2 class="contact-heading">LET'S<br>BUILD<br>SOMETHING.</h2>
+            </div>
+            <div class="contact-links">
+                <a href="mailto:hello@example.com" class="contact-link">HELLO@EXAMPLE.COM</a>
+                <a href="https://github.com" class="contact-link" target="_blank">GITHUB</a>
+                <a href="https://twitter.com" class="contact-link" target="_blank">TWITTER</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <span class="footer-copy">&copy; 2026 HENRY</span>
+            <span class="footer-tagline">DESIGNED WITH OBJECTIVITY</span>
+        </div>
     </footer>
+
 </body>
 </html>
